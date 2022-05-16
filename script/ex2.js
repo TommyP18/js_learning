@@ -1,12 +1,12 @@
-const intervalEvenSum = (a, b) => {
-  let s = 0;
+const intervalEvenSum = (firstNumber, secondNumber) => {
+  let sum = 0;
 
-  for (let i = a; i <= b; i++) {
+  for (let i = firstNumber; i <= secondNumber; i++) {
     if (i % 2 == 0) {
-      s += i;
+      sum += i;
     }
   }
-  return s;
+  return sum;
 }
 
 console.log(intervalEvenSum(2,6))
