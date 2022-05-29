@@ -1,8 +1,7 @@
 const array = [1, 2, 3, 4];
 
-const square = (number) => {
- return number * number
-}
+const square = (number) => number * number
+
 
 const convert = (fn, arr) => {
   const array2 = [];

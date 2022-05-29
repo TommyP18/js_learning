@@ -1,7 +1,6 @@
 const colors = ["red","green","blue"]
 
-const checkColor = (color) => {
-  return colors.indexOf(color)
-}
+const checkColor = (color) => colors.indexOf(color)
+
 
 console.log(checkColor("purple"))

@@ -35,9 +35,7 @@ const thirdArrayDisplay = (arr) => {
   }
 }
 
-const fourthArrayDisplay = (arr) => {
-  arr.forEach(value => alert(value))
-}
+const fourthArrayDisplay = (arr) => arr.forEach(value => alert(value))
 
 const fifthArrayDisplay = (arr) => {
   for (let value of arr.values()) {

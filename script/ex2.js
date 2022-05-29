@@ -19,13 +19,11 @@ const maxAndMinElement = (arr) => {
  return temp;
 }
 // Третий пункт
-const descArray = (arr) => {
- return arr.sort((firstNumber, secondNumber) => secondNumber - firstNumber)
-}
+const descArray = (arr) => arr.sort((firstNumber, secondNumber) => secondNumber - firstNumber)
+
 // Четвёртый пункт
-const average = (arr) => {
-  return arr.reduce((previus, current) => previus + current, 0) / arr.length
-}
+const average = (arr) => arr.reduce((previus, current) => previus + current, 0) / arr.length
+
 
 const greaterThanAverage = (arr) => {
   let newArray = []
