@@ -1,4 +1,5 @@
-const Array = [1, 5, 0, -5, 30, 100, -500, 0, 100, 55]
+const Array = [1, 5, 0, -5, 30, 100, -500, 0, 100, 55];
+
 // Первый пункт
 const underFive = (arr) => {
   arr.forEach(element => {
@@ -6,7 +7,8 @@ const underFive = (arr) => {
       alert(element)
     }
   });
-}
+};
+
 // Второй пункт
 const maxAndMinElement = (arr) => {
   let temp = 0;
@@ -17,13 +19,13 @@ const maxAndMinElement = (arr) => {
     }
   })
  return temp;
-}
+};
+
 // Третий пункт
-const descArray = (arr) => arr.sort((firstNumber, secondNumber) => secondNumber - firstNumber)
+const descArray = (arr) => arr.sort((firstNumber, secondNumber) => secondNumber - firstNumber);
 
 // Четвёртый пункт
-const average = (arr) => arr.reduce((previus, current) => previus + current, 0) / arr.length
-
+const average = (arr) => arr.reduce((previus, current) => previus + current, 0) / arr.length;
 
 const greaterThanAverage = (arr) => {
   let newArray = []
@@ -35,5 +37,6 @@ const greaterThanAverage = (arr) => {
   }))
   return newArray
 }
+
 // Вывод
-console.log(greaterThanAverage(Array))
+console.log(greaterThanAverage(Array));

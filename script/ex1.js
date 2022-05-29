@@ -43,8 +43,6 @@ const fifthArrayDisplay = (arr) => {
   }
 }
 
-
-
 // По моему мнению самый лучший метод является метод .forEach().
 
 const lastMethod = (arr) => {

@@ -1,6 +1,5 @@
-const colors = ["red","green","blue"]
+const colors = ["red","green","blue"];
 
-const checkColor = (color) => colors.indexOf(color)
+const checkColor = (color) => colors.indexOf(color);
 
-
-console.log(checkColor("purple"))
+console.log(checkColor("purple"));
