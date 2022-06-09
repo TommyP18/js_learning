@@ -3,7 +3,7 @@ const arrayOfObjects = [
   {x: 3, y: 4}, 
   {x: null, y: 4}, 
   {x: 3, y: undefined},
-]
+];
 
 const filterArray = (array) => {
   array.forEach((item) => {
