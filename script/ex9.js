@@ -5,7 +5,7 @@ const handleClick = () => {
 
   // console.log(days, hours, minutes);
 
-  if (days < 31 || hours < 25 || minutes < 61) {
+  if (days <= 30 || hours <= 24 || minutes <= 60) {
     start(days, hours, minutes);
   } else {
     document.getElementById("errorContainer").innerHTML = "Error"
