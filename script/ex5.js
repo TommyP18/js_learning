@@ -1,6 +1,6 @@
-// https://jsoneditoronline.org/#left=cloud.57c688b059c648ed98565c143fce8c3
+// https://jsoneditoronline.org/#left=cloud.6dcc8b68cd7f45c1b454042d22230d91
 
-const data = `{
+const persons = `{
   "FIO": "Bodrug Nichita Ion",
   "birthDate": "2000-10-18",
   "adress": "Sevcenko 52",
@@ -25,4 +25,4 @@ const data = `{
   }
 }`
 
-document.getElementById("jsonContainer").innerHTML = JSON.stringify(JSON.parse(data), null, 4)
+document.getElementById("jsonContainer").innerHTML = JSON.stringify(JSON.parse(persons), null, 4)
