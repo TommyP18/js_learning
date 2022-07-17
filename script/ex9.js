@@ -1,8 +1,7 @@
-const handleClick = () => {
+const handleStartClick = () => {
   const days = parseInt(document.getElementById("days").value, 0);
   const hours = parseInt(document.getElementById("hours").value, 0);
   const minutes = parseInt(document.getElementById("minutes").value, 0);
-
   // console.log(days, hours, minutes);
 
   if (days <= 30 || hours <= 24 || minutes <= 60) {
@@ -14,7 +13,7 @@ const handleClick = () => {
 
 const start = (days, hours, minutes) => {
   let sumInSeconds = 0;
-
+  
   if (days) {
     sumInSeconds = days * 86400;
   }
@@ -32,7 +31,6 @@ const start = (days, hours, minutes) => {
 
 const displayTime = (seconds) => {
 
-  
   let remainingSeconds = seconds;
 
   const interval = setInterval(() => {
@@ -44,23 +42,29 @@ const displayTime = (seconds) => {
     console.log(remainingSeconds);
 
     document.getElementById("display").innerHTML = `${days} Дней   ${hours} Часов  ${minutes}  Минут`;
-
+    
     if (remainingSeconds === 0) {
       clearInterval(interval)
     }
-  }, 1000)
+  }, 1)
   console.log(days, hours, minutes);
 }
 
-const setEventListeners = () => {
+const btnStart = () => {
   document.getElementById("start").addEventListener("click", () => {
-    handleClick();
+    handleStartClick();
   })
   
 }
 
+const btnPause = () => {
+  document.getElementById("pause").addEventListener("click", () => {
+  })
+}
+
 document.addEventListener("DOMContentLoaded", () => {
-  setEventListeners();
+  btnStart();
+  btnPause();
 })
 
 
