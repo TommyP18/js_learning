@@ -1,0 +1,1 @@
+$("h2:not(.test)").css("color","red")
