@@ -1,0 +1,1 @@
+$(":header:not(.test)").css("color","red")
