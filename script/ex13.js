@@ -1,0 +1,1 @@
+$(":header + :header").css("color","red")
