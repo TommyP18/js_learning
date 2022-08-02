@@ -19,7 +19,7 @@ const data = {
 const createTree = (container, obj) => {
   document.getElementById("container").innerHTML = createTreeText(obj);
 }
-
+// Rewrite using template or js create element
 const createTreeText = (obj) => { 
   let li = '';
   let ul;

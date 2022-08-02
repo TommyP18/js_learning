@@ -1,4 +1,5 @@
-const arrayOfNumber = Array.from(Array(100).keys())
+// const arrayOfNumber = Array.from(Array(100).keys())
+const arrayOfNumber = [...new Array(100).keys()];
 
 const odds = arrayOfNumber.filter((number) => {
   return (number % 2 !== 0);

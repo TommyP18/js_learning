@@ -1,3 +1,5 @@
+// Refactor
+
 const randomNumbersGenerator = (min, max) => {
     return Math.floor(Math.random() * (max - min)) + min;
 }

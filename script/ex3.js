@@ -1,12 +1,12 @@
 const factorial = (x) => {
   if (x == 0) {
     return 1;
-  } else {
-    return x * factorial(x - 1)
-  }
+  };
+
+  return x * factorial(x - 1);
 } 
 
-const number = prompt("Enter the number for processing: ")
+const number = prompt("Enter the number for processing: ");
 
 if (number >= 0) {
   const result = factorial(number);
