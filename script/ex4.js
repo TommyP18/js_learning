@@ -9,27 +9,29 @@ class Validator {
 
   }
 
-  static isEmail(str) {
-      return ((str.indexOf('@') !== -1) && (str.indexOf('.') !== -1))
+   isEmail(str) {
+    const email = str.match(/[\w-\.]+@([\w-]+\.)+[\w-]{2,4}/)
+    return email !== null
   }
 
-  static isDomain(str) {
-      return ((str.indexOf('.com') !== -1) || (str.indexOf('.net') !== -1))
+   isDomain(str) {
+    const domain = str.match(/(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]/)
+    return domain !== null
   }
 
-  static isDate(str) {
-      const date = str.match(/[0-9]{2}\.[0-9]{2}\.[0-9]{4}/);
-      return date !== null;
+   isDate(str) {
+    const date = str.match(/[0-9]{2}\.[0-9]{2}\.[0-9]{4}/);
+    return date !== null;
   }
 
-  static isPhone(str) {
-      const phone = str.match(/\+38\ \([0-9]{3}\)\ [0-9]{2}-[0-9]{2}-[0-9]{3}/);
-      return phone !== null;
+   isPhone(str) {
+    const phone = str.match(/\+38\ \([0-9]{3}\)\ [0-9]{2}-[0-9]{2}-[0-9]{3}/);
+    return phone !== null;
   }
 }
 
 const validator = new Validator();
-console.log(validator.isEmail('phphtml@mail.ru'));
-console.log(validator.isDomain('test.net'));
+console.log(validator.isEmail("asda@gmail.com"));
+console.log(validator.isDomain('http://test.net'));
 console.log(validator.isDate('12.05.2020'));
 console.log(validator.isPhone('+38 (096) 23-14-014'));
