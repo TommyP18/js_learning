@@ -24,10 +24,10 @@ const createTreeText = (obj) => {
   let li = '';
   let ul;
   for (let key in obj) {
-    li += '<li>' + key + createTreeText(obj[key]) + '</li>';
+    li += `<li> ${key} ${createTreeText(obj[key])} </li>`;
   }
   if (li) {
-    ul = '<ul>' + li + '</ul>'
+    ul = `<ul> ${li} </ul>`
   }
   return ul || '';
 }

@@ -1,28 +1,29 @@
-// Refactor
+const matrixCreation = () => {
+  const size = 5
+  const matrix = new Array(size).fill(0).map(() => new Array(size).fill(0))
+  let value = 0;
 
-const randomNumbersGenerator = (min, max) => {
-    return Math.floor(Math.random() * (max - min)) + min;
-}
-
-const matrix = (rows,columns) => {
- const arr = [];
-
- if (rows <= 10 || columns <= 10) {
-  for(let i = 0; i < rows; i++){
-    arr[i] = [];
-
-    for(let j = 0; j<columns; j++){
-      arr[i][j] = randomNumbersGenerator(0, 9);
-      }
+  for (let i = 0; i < size; i++) {
+    matrix[i][i] = value++
+  }
+  
+  const create = (i, j) => {
+    while ((i < size) && (j < size)) {
+      matrix[i][j] = value;
+      value++;
+      i++;
+      j++;
     }
   }
- return arr;
+  let i = 0;
+  let j = 1;
+
+  while (j < size) {
+    create(i, j);
+    create(j, i)
+    j++
+  }
+  console.log(matrix)
 }
 
-const compareNumbers = (a, b) => {
- return a - b;
-}
-
-const myMatrix = matrix(10,10);
-myMatrix.forEach(row => row.sort(compareNumbers));
-console.log(myMatrix);
+matrixCreation()
