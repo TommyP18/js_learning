@@ -84,7 +84,7 @@ class Veterenar {
   }
 // Reafactor use template
   treatAnimal(animal) {
-     console.log("FOOD: " + animal.food + " " + " LOCATION: " + animal.location)
+     console.log(`FOOD: ${animal.food}  LOCATION: ${animal.location}`)
   }
 
   getName() {
@@ -102,10 +102,9 @@ const exampleHorse = new Horse("weed", "Balti", "Black", "NeedForSpeed")
 const exampleVeterenar = new Veterenar("Serghei", "Vasiliev")
 const allAnimals = [exampleCat, exampleDog, exampleHorse]
 
-// Refactor for of
-allAnimals.forEach((element) => {
-  exampleVeterenar.treatAnimal(element)
- })
+for (let elem of allAnimals) {
+  exampleVeterenar.treatAnimal(elem)
+}
 
 console.log(allAnimals);
 

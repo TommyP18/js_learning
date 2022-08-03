@@ -6,7 +6,7 @@ class User {
 
   // template use!
   getFullName() {
-    return this.name + " " + this.surname;
+    return `${this.name} ${this.surname}`;
   }
 } 
 

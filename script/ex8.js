@@ -1,13 +1,17 @@
 class Elem {
-
   constructor(selector) {
-      this.elements = document.querySelectorAll(selector);
+    this.elements = document.querySelectorAll(selector);
   }
 // Refactor for of 
+//   each(origFunction) {
+//       this.elements.forEach(item => {
+//           origFunction(item);
+//       });
+//   }
   each(origFunction) {
-      this.elements.forEach(item => {
-          origFunction(item);
-      });
+    for (let elem of this.elements) {
+      origFunction(elem);
+    }
   }
 
   html(text) {
