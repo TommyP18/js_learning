@@ -29,7 +29,9 @@ class FormElement {
     const text = document.getElementById("name")
     const age = document.getElementById("age")
 
-    btn.addEventListener("click", () => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      
       if (parseInt(age.value) < 10 || age.value === "" || text.value === "") {
         age.style.borderColor = "red"
         

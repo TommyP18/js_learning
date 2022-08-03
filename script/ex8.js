@@ -3,7 +3,7 @@ class Elem {
   constructor(selector) {
       this.elements = document.querySelectorAll(selector);
   }
-
+// Refactor for of 
   each(origFunction) {
       this.elements.forEach(item => {
           origFunction(item);

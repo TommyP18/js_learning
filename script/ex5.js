@@ -4,25 +4,26 @@ class User {
     this.surname = surname;
   }
 
+  // template use!
   getFullName() {
-    return this.name + " " + this.surname
+    return this.name + " " + this.surname;
   }
 } 
 
 class Student extends User{
   constructor(name, surname, year) {
-    super(name,surname)
-    this.year = year
+    super(name,surname);
+    this.year = year;
   }
 
   getCourse() {
-    const thisDate = new Date()
-    return (thisDate.getFullYear() - this.year)
+    const thisDate = new Date();
+    return (thisDate.getFullYear() - this.year);
   }
 
 }
 
-const worker = new Student("Nikita", "Bodrug", 2018)
+const worker = new Student("Nikita", "Bodrug", 2018);
 
 console.log(worker.name); //выведет 'Иван'
 console.log(worker.surname); //выведет 'Иванов'
