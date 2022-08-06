@@ -1,40 +1,15 @@
-// REFACTOR!!!!!!!!!!
-// No function !
-// PA RA SHA
-
 const child = document.querySelector('.child');
 const parents = document.querySelectorAll('.parent');
 
+// "child"
+const dragStart = (child) => {
+  child.className += ' hold';
 
-const dragStart = (event) => {
-  event.className += ' hold';
-
-  setTimeout(() => {
-    event.className = 'invisible'
-  }, 0);
+  setTimeout(() => (child.className = 'invisible'), 0);
 }
 
 const dragEnd = (event) => {
-  event.className = 'child';
-}
-
-const dragOver = (event) => {
-  event.preventDefault();
-}
-
-const dragEnter = (event) => {
-  event.preventDefault();
-  event.target.className = 'parent hovered';
-}
-
-const dragLeave = (event) => {
-  event.className = 'parent';
-}
-
-const dragDrop = (event) => {
-  event.className = 'parent';
-  event.target.append(child);
-  console.log(event.target);
+  event.target.classList = "child";
 }
 
 child.addEventListener('dragstart', (e) => {
@@ -44,17 +19,35 @@ child.addEventListener('dragend', (e) => {
   dragEnd(e);
 });
 
+const dragEnter = (parent) => {
+  parent.className = 'parent hovered';
+}
+
+const dropDrop = (parent) => {
+  parent.className = 'parent';
+  parent.append(child);
+}
+
+const dragLeave = (parent) => {
+  parent.className = "parent";
+}
+
+const dragOver = (e, parent) => {
+  e.preventDefault();
+  parent.className = "parent hovered";
+}
+
 for (const parent of parents) {
   parent.addEventListener('dragover', (e) => {
-    dragOver(e);
+    dragOver(e, parent)
   });
-  parent.addEventListener('dragenter', (e) => {
-    dragEnter(e);
+  parent.addEventListener('dragenter', () => {
+    dragEnter(parent);
   });
-  parent.addEventListener('dragleave', (e) => {
-    dragLeave(e)
+  parent.addEventListener('dragleave', () => {
+    dragLeave(parent);
   });
   parent.addEventListener('drop', (e) => {
-    dragDrop(e);
+    dropDrop(parent);
   });
 }
