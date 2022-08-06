@@ -7,7 +7,6 @@ const createChessBoard = () => {
       const resultingColor = (j + i) % 2 === 0 ? "black" : "white";
 
       block.className = `block ${resultingColor}`;
-
       mainBlock.appendChild(block);
     }
   }

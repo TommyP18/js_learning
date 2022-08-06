@@ -1,20 +1,22 @@
-const input = document.getElementById("input")
-const table = document.getElementById("table")
+const input = document.getElementById("input");
+const table = document.getElementById("table");
+const addButton = document.getElementById("addButton")
 
 const createCell = () => {
-  const cell = document.createElement("td")
-  const removeBtn = document.createElement("button")
-  const row = document.createElement("tr")
+  const cell = document.createElement("td");
+  const removeBtn = document.createElement("button");
+  const row = document.createElement("tr");
 
+  removeBtn.innerHTML = "X";
   removeBtn.addEventListener("click", () => {
-    row.remove()
-  })
+    row.remove();
+  });
+  cell.innerHTML = input.value;
 
-  cell.innerHTML = input.value
-  removeBtn.innerHTML = "X"
-  row.append(cell,removeBtn)
-  table.append(row)
-  input.value = ""
+  row.append(cell,removeBtn);
+  table.append(row);
+
+  input.value = "";
 }
 
 addButton.addEventListener("click", () => {

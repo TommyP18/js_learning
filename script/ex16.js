@@ -1,4 +1,5 @@
 const input = document.getElementById("input");
+
 const inputValidation = () => {
   if (isNaN(input.value)) {
     alert("Enter a number pls");
@@ -7,5 +8,5 @@ const inputValidation = () => {
 }
 
 input.addEventListener("keyup", () => {
-  inputValidation()
+  inputValidation();
 })

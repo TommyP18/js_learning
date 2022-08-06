@@ -3,14 +3,15 @@ const car = document.querySelector(".car");
 const movement = 10;
 
 
-window.addEventListener("load", (event) => {
-  car.style.position = "absolute";
-  car.style.left = 0;
-  car.style.top = 0;
+window.addEventListener("load", () => {
+  const styles = {
+    position: "absolute",
+    left: 0,
+    top: 0,
+  }
 
-  bus.style.position = "absolute";
-  bus.style.left = 0;
-  bus.style.top = 0;
+  Object.assign(car.style, styles);
+  Object.assign(bus.style, styles);
 })
 
 window.addEventListener("keydown", (e) => {

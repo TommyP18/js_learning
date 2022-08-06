@@ -1,3 +1,6 @@
+// REFACTOR!!!!!!!!!!
+// No function !
+
 const child = document.querySelector('.child');
 const parents = document.querySelectorAll('.parent');
 
