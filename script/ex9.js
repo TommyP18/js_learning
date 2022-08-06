@@ -13,7 +13,9 @@ const showNotification = ({top = 0, right = 0, className, html}) => {
   notification.innerHTML = html;
   document.body.append(notification);
 
-  setTimeout(() => notification.remove(), 1500);
+  setTimeout(() => {
+    notification.remove()
+  }, 1500);
 }
 
 showNotification({top : 10, right: 10, className: "welcome", html: "Welcome"})

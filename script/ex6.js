@@ -1,20 +1,18 @@
 const createChessBoard = () => {
-  let mainBlock = document.querySelector('.main-block')
-  let block
-  let flag = true
+  const mainBlock = document.querySelector('.main-block');
 
   for (let i = 0; i < 8; i++) {
     for (let j = 0; j < 8; j++) {
-      if (j === 0) flag = !flag
-       block = document.createElement("div");
+      const block = document.createElement("div");
+      const resultingColor = (j + i) % 2 === 0 ? "black" : "white";
 
-      if (flag) block.className = "block black"
-      else block.className = "block white"
+      block.className = `block ${resultingColor}`;
 
       mainBlock.appendChild(block);
-      flag = !flag
     }
   }
 }
 
 createChessBoard()
+
+// Переделать (убрать флаг,связь resultingColor c i или j)

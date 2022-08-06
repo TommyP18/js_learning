@@ -1,12 +1,12 @@
 const input = document.getElementById("input")
 const table = document.getElementById("table")
 
-addButton.addEventListener("click", () => {
+const createCell = () => {
   const cell = document.createElement("td")
   const removeBtn = document.createElement("button")
   const row = document.createElement("tr")
 
-  removeBtn.addEventListener("click", (el) => {
+  removeBtn.addEventListener("click", () => {
     row.remove()
   })
 
@@ -15,5 +15,9 @@ addButton.addEventListener("click", () => {
   row.append(cell,removeBtn)
   table.append(row)
   input.value = ""
+}
+
+addButton.addEventListener("click", () => {
+  createCell()
 })
 

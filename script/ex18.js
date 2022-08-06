@@ -1,5 +1,5 @@
 const bus = document.querySelector(".bus");
-const car = document.querySelector(".car")
+const car = document.querySelector(".car");
 const movement = 10;
 
 
@@ -16,20 +16,24 @@ window.addEventListener("load", (event) => {
 window.addEventListener("keydown", (e) => {
     switch (e.key) {
       case "ArrowLeft":
-        if (parseInt(bus.style.left) >= 0)
-        bus.style.left = parseInt(bus.style.left) - movement + "px";
+        if (parseInt(bus.style.left) >= 0) {
+          bus.style.left = parseInt(bus.style.left) - movement + "px";
+        }
         break;
       case "ArrowRight":
-        if (parseInt(bus.style.left) <= 2040)
-        bus.style.left = parseInt(bus.style.left) + movement + "px";
+        if (parseInt(bus.style.left) <= 2040) {
+          bus.style.left = parseInt(bus.style.left) + movement + "px";
+        }
         break;
       case "ArrowUp":
-        if (parseInt(bus.style.top) >= 0)
-        bus.style.top = parseInt(bus.style.top) - movement + "px";
+        if (parseInt(bus.style.top) >= 0) {
+          bus.style.top = parseInt(bus.style.top) - movement + "px";
+        }
         break;
       case "ArrowDown":
-        if (parseInt(bus.style.top) <= 1010)
-        bus.style.top = parseInt(bus.style.top) + movement + "px";
+        if (parseInt(bus.style.top) <= 1010) {
+          bus.style.top = parseInt(bus.style.top) + movement + "px";
+        }
         break;
     }
 

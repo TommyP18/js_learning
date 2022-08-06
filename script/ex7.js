@@ -1,10 +1,9 @@
 const links = document.querySelectorAll('a');
 
-for (let link of links) {
-  const href = link.getAttribute('href');
-  if (!href) continue; 
-
-  if (!href.includes('://')) continue; 
-
+for (const link of links) {
+if (link.innerHTML.match(/https?:\/\//g)) {
   link.style.color = 'red';
 }
+}
+
+// Only http/https protocols

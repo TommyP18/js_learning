@@ -1,21 +1,44 @@
-const ol = document.createElement("OL")
-const addButton = document.getElementById("addElement")
-const input = document.getElementById("input")
+const ol = document.createElement("OL");
+const addButton = document.getElementById("addElement");
+const input = document.getElementById("input");
 
-addButton.disabled = true
-document.body.append(ol)
+addButton.disabled = true;
+document.body.append(ol);
 
 input.addEventListener("keyup", () => {
-  if (input.value == "") addButton.disabled = true
-  else addButton.disabled = false
+  disableButton();
 })
 
+const disableButton = () => {
+  addButton.disabled = input.value === "";
+}
+
+const alertValue = (value) => {
+  alert(value)
+}
+
+const renderListElement = () => {
+  const value = input.value;
+  const li = document.createElement("LI");
+  const span = document.createElement("span");
+
+  span.innerHTML = value;
+  
+  li.addEventListener("click", () => {
+    alertValue(value);
+  })
+  
+  li.append(span);
+  ol.append(li);
+
+  input.value = "";
+}
+
 addButton.addEventListener("click", () => {
-  const li = document.createElement("LI")
-  li.innerHTML = `<a href="#" onclick ="alert('${input.value}')">${input.value}</a>`
-  ol.append(li)
-  input.value = ""
+  renderListElement();
 })
+
+
 
 
 
