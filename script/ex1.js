@@ -1,8 +1,19 @@
-const textArea = document.
+const area = document.getElementById("area");
+const button = document.getElementById("btn");
 
-area.value = localStorage.getItem('area');
-
-const setLocalStorageItem = () {
-  localStorage.setItem('area', area.value)
+const setEventListener = () => {
+  localStorage.setItem("area", area.value);
 }
 
+const buttonToRemoveItem = () => {
+  localStorage.removeItem("area");
+  area.value = "";
+}
+
+button.addEventListener("click", () => {
+  buttonToRemoveItem();
+})
+
+area.addEventListener("input", () => {
+  setEventListener();
+})
