@@ -127,7 +127,7 @@ nav {
 
 .flower {
   position: absolute;
-  right: 19rem;
+  right: 23rem;
   top: 23rem;
   z-index: 1;
 }
@@ -499,7 +499,6 @@ footer, .subscribe-content, .footer-block{
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 30rem;
   z-index: inherit;
   z-index: 1;
 }
