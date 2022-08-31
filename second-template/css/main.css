@@ -1,0 +1,416 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+
+body {
+  background-color: #000040;
+  font-family: 'Rubik';
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 4000px;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 380px;
+}
+
+header {
+  max-width: 380px;
+  margin: 2rem auto 0;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+
+.text-header p:first-child {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+
+.text-header p:last-child {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #B9B2C4;
+}
+
+/* Card */
+
+.card {
+  margin-top: 1.5rem;
+}
+
+.card-content {
+  position: relative;
+}
+
+.card-content div h1{
+  position: absolute;
+  left: 30px;
+  top: 40px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+
+.card-info {
+  position: absolute;
+  left: 30px;
+  top: 159px;
+}
+
+.card-info p:first-child {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.card-info p:last-child {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Functions */
+
+.functions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.functions-items p{
+  margin-top: 0.3rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+/* Transactions */
+
+.transactions {
+  margin-top: 2rem;
+}
+
+.transactions .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.transactions .header h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.transactions .header p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #B9B2C4;
+}
+
+.content {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content .item {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.content .item img {
+  margin-right: 14px;
+}
+
+.item-text {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-text div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-text div:first-child p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.item-text div:last-child p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #B9B2C4;
+}
+
+/* Footer */
+
+footer {
+  position: fixed;
+  bottom: 1rem;
+  width: 90%;
+  align-self: center;
+  max-width: 400px;
+}
+
+footer ul {
+  border: 2px solid #383467;
+  background: linear-gradient(180deg, #20204D 0%, #1D1D55 100%);
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* ANALYZE PAGE  */
+
+/* Analyze */
+
+.analyze {
+  margin-top: 2rem;
+}
+
+.analyze div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.analyze div h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+/* Graphic */
+
+.graphic {
+  margin-top: 1rem;
+}
+
+.graphic-btn a {
+  display: flex;
+  justify-content: right;
+}
+
+.graphic-btn a p {
+  margin-right: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #B9B2C4;
+}
+
+.graphic-content {
+  margin-top: 1rem;
+  width: 100%;
+  position: relative;
+}
+
+.graphic-content img {
+  width: 100%;
+}
+
+.indicator {
+  margin-top: -4.7rem;
+  margin-left: -1rem;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.indicator div {
+  position: absolute;
+  width: 66px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  background: #E42BC9;
+  border: 2px solid #FC4FF4;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.indicator div p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+
+.indicator img {
+  margin-top: 2rem;
+}
+
+.months {
+  margin-top: 1rem;
+}
+
+.months ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.months ul li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #B9B2C4;
+}
+
+/* Balance */
+
+.balance {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.balance div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.balance div p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #B9B2C4;
+}
+
+.balance div h3 {
+  margin-top: 0.3rem;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+
+/* BANK CARDS PAGE  */
+
+/* Header Cards */
+
+.header {
+  width: 90%;
+  margin: 1.5rem auto 0;
+  max-width: 380px;
+}
+
+.header div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header div h2 {
+  align-self: flex-end;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+
+/* Balance Cards */
+
+.balance-cards {
+  margin-top: 2rem;
+}
+
+.balance-cards div p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #B9B2C4;
+}
+
+.balance-cards div h4 {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+
+/* Display Cards */
+
+.card-display {
+  margin-top: 3rem;
+}
+
+.card-display div {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.card-display div .card-item:first-child {
+  flex: none;
+}
+
+.card-display div .card-item:last-child {
+  flex: none;
+}
+
+.card-item {
+  position: relative;
+}
+
+.card-item div {
+  transform: rotate(-90deg);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: -2rem;
+  bottom: 8rem;
+}
+
+.card-item div p:first-child {
+  font-weight: 300;
+  font-size: 20.3478px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.card-item div p:last-child {
+  font-weight: 300;
+  font-size: 15.2609px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.card-pages {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.card-pages ul {
+  display: flex;
+}
+
