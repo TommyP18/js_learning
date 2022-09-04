@@ -3,17 +3,17 @@
 
 
 body {
+  width: 100vw;
+  height: 100vh;
   background-color: #000040;
   font-family: 'Rubik';
   font-style: normal;
   display: flex;
   flex-direction: column;
-  overflow-y: hidden;
-  overflow-x: hidden;
 }
 
 .container {
-  max-width: 4000px;
+  max-width: 400px;
   width: 90%;
   margin: 0 auto;
   max-width: 380px;
@@ -359,58 +359,17 @@ footer ul {
 
 /* Display Cards */
 
-.card-display {
-  margin-top: 3rem;
+.card-display{
+  display: flex;
+  background-color: aqua;
+  position: absolute;
+  width: 100%;
+
 }
 
 .card-display div {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
+
 }
 
-.card-display div .card-item:first-child {
-  flex: none;
-}
 
-.card-display div .card-item:last-child {
-  flex: none;
-}
-
-.card-item {
-  position: relative;
-}
-
-.card-item div {
-  transform: rotate(-90deg);
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  right: -2rem;
-  bottom: 8rem;
-}
-
-.card-item div p:first-child {
-  font-weight: 300;
-  font-size: 20.3478px;
-  line-height: 24px;
-  color: #FFFFFF;
-}
-
-.card-item div p:last-child {
-  font-weight: 300;
-  font-size: 15.2609px;
-  line-height: 18px;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.card-pages {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-}
-
-.card-pages ul {
-  display: flex;
-}
 

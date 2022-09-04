@@ -89,6 +89,19 @@ form p {
   padding: 12px;  
 }
 
+.field div {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.field div a{
+  right: 1rem;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+
 .checkbox-container {
   margin-top: 2em;
   display: flex;
@@ -185,212 +198,59 @@ form p {
 /* RIGHT SIDE */
 
 .slider-content {
-  position: relative;
   width: 44rem;
   height: 33rem;
   margin: 4em auto;
 }
 
-.card-content {
-  width: 90%;
-  margin: 1em auto;
-}
-
-.rating-card {
-  position: absolute;
-  left: 2rem;
-  width: 20rem;
-  background: #FFF;
-  border: 0.894286px solid #EDEEF2;
-  border-radius: 14.3086px;
-  filter: drop-shadow(0px 0px 80px rgba(49, 57, 120, 0.3));
-}
-
-.rating-header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.rating-header div {
-  display: flex;
-  flex-direction: column
-}
-
-.rating-header div p {
-  font-weight: 700;
-  font-size: 11.6257px;
-  line-height: 16px;
-  letter-spacing: 0.0894286px;
-  color: #2B2B43;
-}
-
-.rating-header div div {
-  display: flex;
-  flex-direction: row;
-  align-items: center ;
-}
-
-.rating-header div div div img {
-  width: 12.5px;
-  height: 12.5px;
-}
-
-.rating-header div div p:first-of-type {
-  font-weight: 600;
-  font-size: 17.8857px;
-  line-height: 25px;
-  letter-spacing: 0.0894286px;
-  color: #4E60FF;  
-  margin-right: 10px;
-}
-
-.rating-header div div p:last-of-type {
-  font-weight: 700;
-  font-size: 8.94286px;
-  line-height: 13px;
-  color: #83859C;  
-  margin-left: 7px;
-}
-
-.rating-header button {
-  padding: 10px 14px;
-  font-weight: 700;
-  font-size: 12.52px;
-  line-height: 18px;
-  letter-spacing: 0.268286px;
-  color: #4E60FF;
-  border: 0.894286px solid #4E60FF;
-  border-radius: 7.15429px;
-}
-
-.rating-card hr {
-  border: 1px solid #EDEEF2;
+.swiper {
   width: 100%;
-  margin-top: 1rem;
+  height: 100%;
 }
 
-.filter-button {
-  display: flex;
-  justify-content: center;
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.filter-button button {
+.swiper-textblock {
+  width: 70%;
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  border: 0.894286px solid #C7C8D2;
-  border-radius: 7.15429px;
-  padding: 7px;
+  margin-bottom: 5rem;
 }
 
-.filter-button button p {
-  font-weight: 600;
-  font-size: 11.6257px;
-  line-height: 16px;
-  color: #2B2B43;
-  margin-right: 1em;
-}
-
-.filter-button button p span {
-  font-weight: 600;
-  font-size: 11.6257px;
-  line-height: 16px;
-  color: #83859C;
-}
-
-.user {
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: row;
-}
-
-.user img {
-  margin-right: 10px;
-  width: 32.19px;
-  height: 32.19px;
-}
-
-.user-header p{
+.swiper-textblock h1 {
+  text-align: center;
   font-weight: 700;
-  font-size: 12.52px;
-  line-height: 18px;
-  letter-spacing: 0.0894286px;
-  color: #2B2B43;  
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0.1px;
+  color: #FFFFFF;
 }
 
-.user-header div {
-  display: flex;
-  align-items: center;
-}
-
-.user-header div div {
-  display: flex;
-  margin-right: 0.5rem;
-}
-
-.user-header div p {
-  font-weight: 700;
-  font-size: 8.94286px;
-  line-height: 13px;
-  color: #83859C;
-}
-
-.user-header div div img {
-  width: 12.5px;
-  height: 12.5px;
-  margin-right: 0;
-}
-
-.user-review {
+.swiper-textblock p {
   margin-top: 1rem;
-}
-
-.user-review p {
   font-weight: 400;
-  font-size: 12.52px;
-  line-height: 18px;
-  letter-spacing: 0.0894286px;
-  color: #2B2B43;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #FFFFFF;  
+  text-align: center;
 }
 
-.user-rating {
-  margin-top: 1rem;
-  display: flex;
-  align-items: center;
+.swiper-pagination-bullet {
+  background-color: white!important;
 }
 
-.user-rating div {
-  display: flex;
-  align-items: center;
-  margin-right: 1rem;
+.swiper-pagination-bullet-active {
+  background-color: white;
 }
 
-.user-rating div img {
-  width: 14px;
-  height: 14px;
-}
-
-.user-rating div p {
-  font-weight: 600;
-  font-size: 10.7314px;
-  line-height: 14px;
-  display: flex;
-  align-items: center;
-  color: #545563;
-}
-
-.users hr {
-  border: 0.894286px solid #EDEEF2;
-  width: 100%;
-}
-
-.menu-card {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 618px;
-  height: 132px;
-  background: #FFFFFF;
-  border: 0.846575px solid #EDEEF2;
-  border-radius: 13.5452px;
-  filter: drop-shadow(0px 0px 80px rgba(49, 57, 120, 0.4));
+.blue {
+  content: url(../img/eye1.png);
 }

@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
   <title>Document</title>
 </head>
 <body>
@@ -25,14 +26,17 @@
           </div>
           <div class="field">
             <label for="passwordInput">Password</label>
-            <input type="text" id="passwordInput" placeholder="min. 8 characters">
+            <div>
+              <input type="password" id="passwordInput" placeholder="min. 8 characters">
+              <a href="" id="eyeButton" class="eyeButton"><img src="../img/eye on.png" alt=""></a>
+            </div>
           </div>
           <div class="checkbox-container">
             <input type="checkbox" id="checkInput">
             <label for="checkInput">Keep me logged in</label>
           </div>
           <div class="form-buttons">
-            <button>Login</button>
+            <button type="submit" id="loginButton">Login</button>
             <button>Forgot password</button>
           </div>
         </form>
@@ -46,116 +50,29 @@
 
     <div class="right">
       <div class="slider-content">
-        <div class="cards">
-          <div class="rating-card">
-            <div class="card-content">
-              <div class="rating-header">
-                <div>
-                  <p>Overall rating</p>
-                  <div>
-                    <p>4.2</p>
-                    <div>
-                      <img src="../img/star1.svg" alt="">
-                      <img src="../img/star1.svg" alt="">
-                      <img src="../img/star1.svg" alt="">
-                      <img src="../img/star1.svg" alt="">
-                      <img src="../img/star2.svg" alt="">
-                    </div>
-                    <p>3 votes</p>
-                  </div>
-                </div>
-                <button>Leave review</button>
-              </div>
-            </div>
-            <hr>
-            <div class="card-content">
-              <div class="rating-content">
-                <div class="filter-button">
-                  <button>
-                    <p><span>Sort by: </span>Newest first</p>
-                    <img src="../img/down.png" alt="">
-                  </button>
-                </div>
-                <div class="users">
-                  <div class="user">
-                    <img src="../img/01.png" alt="">
-                    <div class="user-text-block">
-                      <div class="user-header">
-                        <p>Savannah Miles</p>
-                        <div>
-                          <div>
-                            <img src="../img/star1.svg" alt="">
-                            <img src="../img/star1.svg" alt="">
-                            <img src="../img/star1.svg" alt="">
-                            <img src="../img/star1.svg" alt="">
-                            <img src="../img/star1.svg" alt="">
-                          </div>
-                          <p>10 days ago</p>
-                        </div>
-                      </div>
-                      <div class="user-review">
-                        <p>
-                          Lorem ipsum dolor sit amet, adhuc nulla 
-                          definiebas mei ad, ei doming aperiam delicata est.
-                        </p>
-                      </div>
-                      <div class="user-rating">
-                        <div>
-                          <a href=""><img src="../img/thumb-up.svg" alt=""></a>
-                          <p>14</p>
-                        </div>
-                        <div>
-                          <a href=""><img src="../img/thumb-down.svg" alt=""></a>
-                          <p>4</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="user">
-                    <img src="../img/02.png" alt="">
-                    <div class="user-text-block">
-                      <div class="user-header">
-                        <p>Jacob Jones</p>
-                        <div>
-                          <div>
-                            <img src="../img/star1.svg" alt="">
-                            <img src="../img/star1.svg" alt="">
-                            <img src="../img/star1.svg" alt="">
-                            <img src="../img/star1.svg" alt="">
-                            <img src="../img/star2.svg" alt="">
-                          </div>
-                          <p>1 days ago</p>
-                        </div>
-                      </div>
-                      <div class="user-review">
-                        <p>
-                          Lorem ipsum dolor sit amet, adhuc nulla 
-                          definiebas mei ad, ei doming aperiam delicata est.
-                        </p>
-                      </div>
-                      <div class="user-rating">
-                        <div>
-                          <a href=""><img src="../img/thumb-up.svg" alt=""></a>
-                          <p>14</p>
-                        </div>
-                        <div>
-                          <a href=""><img src="../img/thumb-down.svg" alt=""></a>
-                          <p>4</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+       <div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../img/card-image.png" alt=""></div>
+            <div class="swiper-slide"><img src="../img/card-image.png" alt=""></div>
+            <div class="swiper-slide"><img src="../img/card-image.png" alt=""></div>
+            <div class="swiper-slide"><img src="../img/card-image.png" alt=""></div>
+          </div>  
+          <div class="swiper-textblock">
+            <h1>Leave reviews for all meals</h1>
+            <p>
+              Lorem ipsum dolor sit amet, magna scaevola his ei. 
+              Cum te paulo probatus molestiae, 
+              eirmod assentior eum ne, et omnis antiopam mel.
+            </p>
           </div>
-          <div class="menu-card">
-            
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
-      </div>
+       </div>
+       
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../js/login.js"></script>
 </body>
 </html>
