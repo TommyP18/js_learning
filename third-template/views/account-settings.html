@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="../css/account-settings.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="content">
+      <div class="left-side">
+        <div class="logo">
+          <h2>Food <br> <span>delivery</span></h2>
+        </div>
+        <div class="search-input">
+          <input type="text" placeholder="Search">
+          <img src="../img/search.png" alt="">
+        </div>
+      </div>
+      
+      <div class="right-side">
+        <ul class="menu">
+          <li><a href="">Restaurants</a></li>
+          <li><a href="">Deals</a></li>
+          <li><hr></li>
+          <li><a href="">My orders</a></li>
+        </ul>
+        <div class="account-buttons">
+          <div>
+            <a href=""><img src="../img/shopping bag.png" alt=""></a>
+            <p>4</p>
+          </div>
+          <div>
+              <img src="../img/main-avatar.png" alt="">
+          </div>
+          <hr>
+          <div>
+            <img src="../img/menu.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="content">
+      <div class="settings-container">
+
+        <div class="settings">
+          <p>Settings</p>
+          <div class="settings-buttons">
+
+            <div class="button" id="accountButton">
+              <div>
+                <img src="../img/user.png" alt="">
+              </div>
+              <div>
+                <p>Account</p>
+                <p>Personal information</p>
+              </div>
+            </div>
+
+            <div class="button" id="addressButton">
+              <div>
+                <img src="../img/map pin.png" alt="">
+              </div>
+              <div>
+                <p>Address</p>
+                <p>Shippings addresses</p>
+              </div>
+            </div>
+
+            <div class="button" id="paymentButton">
+              <div>
+                <img src="../img/credit card.png" alt="">
+              </div>
+              <div>
+                <p>Payment method</p>
+                <p>Connected credit cards</p>
+              </div>
+            </div>
+
+            <div class="button" id="securityButton">
+              <div>
+                <img src="../img/shield on.png" alt="">
+              </div>
+              <div>
+                <p>Security</p>
+                <p>Password, 2FA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="account">
+          <p>Account</p>
+          <div class="data-box">
+            <div class="account-content form">
+              <div class="data-wrapper">
+                <p>Personal information</p>
+                <div class="avatar-box">
+                  <p>Avatar</p>
+                  <div>
+                    <img src="../img/main avatar.png" alt="" id="avatarImg">
+                    <input type="file" id="changeFile">
+                    <label for="changeFile" id="uploadButton">Change</label>
+                    <button id="removeImg">Remove</button>
+                  </div>
+                </div>
+                <div class="input">
+                  <div>
+                    <p>First name</p>
+                    <input type="text" placeholder="Jane">
+                  </div>
+                  <div>
+                    <p>Last name</p>
+                    <input type="text" placeholder="Robertson">
+                  </div>
+                </div>
+                <div class="input">
+                  <div>
+                    <p>Email</p>
+                    <input type="text" placeholder="jane.robertson@example.com">
+                  </div>
+                  <div>
+                    <p>Phone number</p>
+                    <input type="text" placeholder="(217) 555-0113">
+                  </div>
+                </div>
+                <p>Email Notifications</p>
+                <div class="checkbox-block">
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="newDeals">
+                    <label for="newDeals">New deals</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="newRest">
+                    <label for="newRest">New restaurants</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="orderStat">
+                    <label for="orderStat">Order statuses</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="password">
+                    <label for="password">Password changes</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="specialOffer">
+                    <label for="specialOffer">Special offers</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="newsletter">
+                    <label for="newsletter">Newsletter</label>
+                  </div>
+                </div>
+                <button>Log out</button>
+              </div>
+              <hr>
+              <div class="data-wrapper">
+                <div class="account-footer">
+                  <button>Log out</button>
+                  <div>
+                    <button>Discard changes</button>
+                    <button>Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="address-content inactive form">
+              <h1>Adress</h1>
+              <h1>Adress</h1>
+              <h1>Adress</h1>
+              <h1>Adress</h1>
+            </div>
+
+            <div class="payment-content inactive form">
+              <h1>Payment</h1>
+              <h1>Payment</h1>
+              <h1>Payment</h1>
+              <h1>Payment</h1>
+            </div>
+
+            <div class="security-content inactive form">
+              <h1>Adress</h1>
+              <h1>Adress</h1>
+              <h1>Adress</h1>
+              <h1>Adress</h1>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <script src="../js/account-settings.js"></script>
+</body>
+</html>

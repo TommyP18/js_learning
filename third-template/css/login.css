@@ -254,3 +254,88 @@ form p {
 .blue {
   content: url(../img/eye1.png);
 }
+
+@media screen and (max-width: 576px) {
+
+  .right {
+    display: none;
+  }
+  
+  .left {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .login-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  form {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .right {
+    display: none;
+  }
+  
+  .left {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .login-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  form {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .right {
+    display: none;
+  }
+  
+  .left {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .login-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  form {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .right {
+    display: none;
+  }
+  
+  .left {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .login-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  form {
+    margin-top: 4rem;
+  }
+}

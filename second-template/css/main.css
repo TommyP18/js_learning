@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
 
 
-body {
+body, html {
   width: 100vw;
   height: 100vh;
   background-color: #000040;
@@ -10,6 +10,7 @@ body {
   font-style: normal;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .container {
@@ -360,15 +361,37 @@ footer ul {
 /* Display Cards */
 
 .card-display{
-  display: flex;
-  background-color: aqua;
-  position: absolute;
+  top: 14rem;
+  position: fixed;
   width: 100%;
-
+  display: flex;
+  padding: 0 1rem;
 }
 
 .card-display div {
+  flex: none;
+  margin-right: 1.5rem;
+}
 
+.card-numbers {
+  position: absolute;
+  top: 65%;
+  left: 35%;
+  transform: rotate(-90deg);
+}
+
+.card-numbers p:first-child {
+  font-weight: 300;
+  font-size: 20.3478px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.card-numbers p:last-child {
+  font-weight: 300;
+  font-size: 15.2609px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 

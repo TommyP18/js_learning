@@ -33,7 +33,8 @@ const showPassword = () => {
 
 loginButton.addEventListener("click", (e) => {
   e.preventDefault();
-  validate();         
+  validate();    
+  redirect();     
 });
 
 eyeButton.addEventListener("click", (e) => {
@@ -48,3 +49,9 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+
+const redirect = () => {
+  setTimeout(() => {
+    window.location.href = "../views/home.html"
+  }, 3000)
+}
