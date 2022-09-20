@@ -1,0 +1,8 @@
+body > a {
+  width: 4rem;
+  height: 1rem;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  background-color: rgb(83, 176, 176);
+}
